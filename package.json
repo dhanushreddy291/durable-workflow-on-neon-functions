@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@neon/ai-sdk-provider": "^0.7.2",
+    "@neon/config": "^0.10.0",
+    "@neon/env": "^0.11.8",
+    "ai": "^7.0.37",
+    "hono": "^4.12.32",
+    "inngest": "^4.13.0",
+    "pg": "^8.22.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "@types/pg": "^8.20.0",
+    "dotenv": "^17.4.2",
+    "esbuild": "^0.28.1",
+    "typescript": "^7.0.2"
+  }
+}
