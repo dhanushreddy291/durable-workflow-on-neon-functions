@@ -6,17 +6,15 @@ export default defineConfig({
     if (!branch.exists) { return { ttl: "7d" }; }
     return {};
   },
-  preview: {
-    functions: {
-      inngest: {
-        name: "Inngest Workflow Endpoint",
-        source: "./index.ts",
-        env: {
-          INNGEST_EVENT_KEY: process.env.INNGEST_EVENT_KEY!,
-          INNGEST_SIGNING_KEY: process.env.INNGEST_SIGNING_KEY!,
-        },
-      }
-    },
-    aiGateway: true
+  functions: {
+    inngest: {
+      name: "Inngest Workflow Endpoint",
+      source: "./index.ts",
+      env: {
+        INNGEST_EVENT_KEY: process.env.INNGEST_EVENT_KEY!,
+        INNGEST_SIGNING_KEY: process.env.INNGEST_SIGNING_KEY!,
+      },
+    }
   },
+  aiGateway: true
 });
